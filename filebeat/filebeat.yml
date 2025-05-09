@@ -1,0 +1,22 @@
+# 📁 Filebeat Configuration (filebeat.yml)
+filebeat.inputs:
+  - type: log
+    enabled: true
+    paths:
+      - /usr/share/logstash/data/gour.json
+    json.keys_under_root: true
+    json.add_error_key: true
+    json.message_key: message
+    fields:
+      log_type: "gour_logs"
+
+output.logstash:
+  hosts: ["logstash:5044"]
+
+monitoring.enabled: true
+monitoring.elasticsearch:
+  hosts: ["http://es01:9200"]
+
+processors:
+  - add_docker_metadata:
+      host: "unix:///var/run/docker.sock"

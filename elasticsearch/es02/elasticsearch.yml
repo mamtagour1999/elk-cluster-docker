@@ -1,0 +1,6 @@
+cluster.name: elk-docker-cluster
+node.name: es02
+network.host: 0.0.0.0
+discovery.seed_hosts: ["es01", "es03"]
+xpack.security.enabled: false
+

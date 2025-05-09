@@ -1,0 +1,22 @@
+# 📁 Metricbeat Configuration (metricbeat.yml)
+metricbeat.modules:
+  - module: system
+    metricsets:
+      - cpu
+      - memory
+      - network
+      - filesystem
+      - fsstat
+    enabled: true
+    period: 10s
+    processes: ['.*']
+
+output.elasticsearch:
+  hosts: ["http://es01:9200"]
+
+setup.kibana:
+  host: "http://kibana:5601"
+
+monitoring.enabled: true
+monitoring.elasticsearch:
+  hosts: ["http://es01:9200"]

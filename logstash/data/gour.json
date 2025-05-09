@@ -1,0 +1,3 @@
+{"datetimestamp":"2025-May-05 10:35:55.442","tags":["json"],"target":"gtr-enrichmentbatch-12-zbc29","operationtype":"ESB_ENRICHMENTBATCH_ELK-Source:SAB,pnrlocator:FKOEQY,TranId:bc124b55-b8c5-451c-adc8-a3b65c7fb0b8|01,PENResponseCd:200,PENResponseTime(ms):2271,OfflineResponseCd:200,OfflineResponseTime(ms):1374,Message:Success"}
+{"datetimestamp":"2025-May-05 10:37:32.376","tags":["json"],"target":"gtr-enrichmentbatch-12-zbc29","operationtype":"ESB_ENRICHMENTBATCH_ELK-Source:SAB,pnrlocator:2JCIW,TranId:bc124b55-b8c5-451c-adc8-a3b65c7fb0b8|01,PENResponseCd:500,PENResponseTime(ms):629,OfflineResponseCd:0,OfflineResponseTime(ms):0,Message:<pnrEnricherResponse><message>Error while calling DST:PNR Locator error<\/message><status>FAILURE<\/status><\/pnrEnricherResponse>"}
+ 
